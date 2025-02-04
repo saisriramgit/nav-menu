@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Side Nav</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="hamburger" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h1>My App</h1>
+    </header>
+
+    <nav class="sidenav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="main-content">
+        <h2>Main content</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti est
+          ex nemo quia consequuntur quam, itaque fuga in. Quaerat, delectus non
+          aliquid animi voluptatibus perferendis enim maxime laborum corrupti
+          commodi impedit natus reprehenderit illo ducimus culpa quos recusandae
+          amet? Architecto magni necessitatibus provident veniam, aperiam ipsum
+          pariatur molestias voluptate magnam optio iste eveniet quod doloribus
+          veritatis culpa minima, error deleniti exercitationem quam, neque
+          sapiente consectetur dolore nam. Laboriosam sequi, tenetur cum nisi
+          tempora reprehenderit? Temporibus itaque eos ipsa odit magnam quam ex
+          dolores nam tempore est delectus explicabo accusantium, quaerat
+          reprehenderit vel omnis praesentium qui odio blanditiis suscipit!
+          Labore, cupiditate?
+        </p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Sifter base. All rights reserved</p>
+    </footer>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function toggleNav() {
+        document.querySelector(".sidenav").classList.toggle("active");
+        document.querySelector(".hamburger").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
