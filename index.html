@@ -25,51 +25,57 @@
     </header>
 
     <!-- Navigation Menu -->
-
-    <aside>
-      <div class="sidebar-header">
-        <img src="assets/images/logo.png" alt="logo" />
-        <h2>Sifterbase</h2>
-      </div>
-      <ul class="sidebar-links">
-        <li>
-          <a href="#"
-            ><span class="material-symbols-outlined">home</span>Home</a
+    <main>
+      <aside id="sidebar">
+        <div class="sidebar-header">
+          <span
+            class="material-symbols-outlined menu-icon"
+            onclick="document.getElementById('sidebar').classList.toggle('expanded')"
+            >menu</span
           >
-        </li>
-        <li>
-          <a href="#"
-            ><span class="material-symbols-outlined">notifications_active</span
-            >Notifications</a
-          >
-        </li>
-        <li>
-          <a href="#"
-            ><span class="material-symbols-outlined">account_circle</span
-            >Account</a
-          >
-        </li>
-        <li>
-          <a href="#"
-            ><span class="material-symbols-outlined">settings</span>Settings</a
-          >
-        </li>
-        <li>
-          <a href="#"
-            ><span class="material-symbols-outlined">logout</span>Logout</a
-          >
-        </li>
-      </ul>
-      <div class="user-account">
-        <div class="user-profile">
-          <img src="assets/images/profile-pic.png" alt="profile-pic" />
-          <div class="user-details">
-            <h3>John Doe</h3>
-            <span>Frontend Engineer</span>
+        </div>
+        <ul class="sidebar-links">
+          <li>
+            <a href="#"
+              ><span class="material-symbols-outlined">home</span>Home</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span class="material-symbols-outlined"
+                >notifications_active</span
+              >Notifications</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span class="material-symbols-outlined">account_circle</span
+              >Account</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span class="material-symbols-outlined">settings</span
+              >Settings</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span class="material-symbols-outlined">logout</span>Logout</a
+            >
+          </li>
+        </ul>
+        <div class="user-account">
+          <div class="user-profile">
+            <img src="assets/images/profile-pic.png" alt="profile-pic" />
+            <div class="user-details">
+              <h3>John Doe</h3>
+              <span>Full Stack Engineer</span>
+            </div>
           </div>
         </div>
-      </div>
-    </aside>
+      </aside>
+    </main>
 
     <!-- Footer -->
 
